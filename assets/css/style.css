@@ -2715,3 +2715,192 @@ footer p {
 .author-name:hover {
   color: var(--primary-color);
 }
+/* ======================================== */
+/* إصلاح الألوان والخلفيات - إضافة ألوان قوية */
+/* ======================================== */
+
+/* تغيير الخلفية الرئيسية للصفحة */
+body {
+  background-color: #fef9f1;
+}
+
+/* إضافة لون خلفية للأقسام */
+.services,
+.our-menu,
+.our-blog,
+.our-services {
+  background-color: #fffaf5;
+}
+
+/* تحسين ألوان البطاقات */
+.cards {
+  background: linear-gradient(145deg, #ffffff, #fff5ec);
+  box-shadow: 0 10px 30px rgba(229, 97, 47, 0.08);
+  transition: all 0.3s ease;
+}
+
+.cards:hover {
+  background: linear-gradient(145deg, #fff5ec, #ffffff);
+  box-shadow: 0 15px 40px rgba(229, 97, 47, 0.15);
+}
+
+/* ألوان خلفية للأقسام المميزة */
+.about-us {
+  background-color: #1a1a2e;
+  background-blend-mode: overlay;
+}
+
+.testimonials {
+  background-color: #0f0f1a;
+  background-blend-mode: overlay;
+}
+
+.our-gallery {
+  background-color: #0a0a0a;
+}
+
+.our-chefs {
+  background-color: #fffaf5;
+}
+
+/* تحسين ألوان النصوص */
+.about-us .about-content p,
+.about-us .about-content h2 {
+  color: #ffffff;
+}
+
+.about-us .about-extra h6 {
+  color: #ffffff;
+}
+
+.testimonials .testimonial-slider-wrapper .slider-content .testi-content p {
+  color: #e0e0e0;
+}
+
+/* إضافة لون خلفية لقسم الحجز */
+.reservation-content {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+}
+
+/* تحسين ألوان الفوتر */
+footer {
+  background-color: #0a0a0a;
+  background-blend-mode: overlay;
+}
+
+/* إضافة خلفية للهيدر عند التمرير */
+header.scrolled {
+  background-color: #e5612f;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين ألوان الأزرار */
+.book-a-table {
+  background: linear-gradient(135deg, #e5612f, #c44d1f);
+  box-shadow: 0 5px 15px rgba(229, 97, 47, 0.3);
+}
+
+.book-a-table:hover {
+  background: linear-gradient(135deg, #c44d1f, #e5612f);
+  transform: translateY(-2px);
+}
+
+/* تحسين ألوان بطاقات الخدمات */
+.services .cards {
+  background: linear-gradient(145deg, #ffffff, #fdf4ea);
+  border: none;
+}
+
+.services .cards:hover {
+  background: linear-gradient(145deg, #e5612f, #c44d1f);
+}
+
+.services .cards:hover .icon i,
+.services .cards:hover .heading h5,
+.services .cards:hover .para p {
+  color: #ffffff;
+}
+
+/* ألوان قسم المنيو */
+.our-menu .item-wrapper .item-left h5 {
+  color: #2d2d2d;
+  font-weight: 700;
+}
+
+.our-menu .item-wrapper .item-left p {
+  color: #6c6c6c;
+}
+
+/* ألوان المدونة */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content .blog-title a {
+  color: #2d2d2d;
+}
+
+/* ألوان أيقونات الخدمات */
+.icon-box {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+  background-color: #e5612f;
+  transform: translateY(-5px);
+}
+
+/* ألوان زر العودة للأعلى */
+#back-to-top {
+  background: linear-gradient(135deg, #e5612f, #c44d1f);
+  box-shadow: 0 5px 20px rgba(229, 97, 47, 0.4);
+}
+
+/* ألوان السلة */
+.shopping-cart-header {
+  background: linear-gradient(135deg, #e5612f, #c44d1f);
+  color: white;
+}
+
+.shopping-cart-header h2 {
+  color: white;
+}
+
+.shopping-cart-header i {
+  color: white;
+}
+
+/* ألوان خلفية أقسام إضافية */
+.our-services {
+  background: linear-gradient(135deg, #fffaf5, #fff5ec);
+}
+
+.our-blog {
+  background: #ffffff;
+}
+
+.subscribe-us {
+  background: linear-gradient(135deg, #fffaf5, #fff5ec);
+  border-radius: 30px;
+  margin: 20px;
+}
+
+/* تحسين ظهور النصوص على الخلفيات الداكنة */
+.reservation .reservation-content h2,
+.reservation .reservation-content p {
+  color: #ffffff;
+}
+
+.reservation .reservation-content span {
+  color: #e5612f;
+  font-weight: bold;
+}
