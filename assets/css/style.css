@@ -234,7 +234,7 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  background-color: var(--text-color-white);
+  background-color: #fef9f1;
   color: var(--text-color);
   overflow-x: hidden;
 }
@@ -400,8 +400,9 @@ header {
 }
 
 header.scrolled {
-  background-color: var(--primary-color);
+  background-color: #e5612f;
   transition: 0.3s all linear;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 
 .logo h1 {
@@ -540,17 +541,21 @@ header.scrolled {
 .shopping-cart-header {
   padding: 16px 18px;
   box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #e5612f, #c44d1f);
+  color: white;
 }
 
 .shopping-cart-header h2 {
   font-family: "Pacifico", cursive;
   font-weight: 300;
   font-size: 24px;
+  color: white;
 }
 
 .shopping-cart-header i {
   cursor: pointer;
   font-size: 34px;
+  color: white;
 }
 
 .shopping-cart-counter {
@@ -802,7 +807,7 @@ header.scrolled {
 
 /* book-a-table button start*/
 .book-a-table {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #e5612f, #c44d1f);
   width: 200px;
   text-align: center;
   margin: 10px 0px;
@@ -811,6 +816,7 @@ header.scrolled {
   display: inline-block;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 0 5px 15px rgba(229, 97, 47, 0.3);
 }
 
 .book-a-table > .anim-layer {
@@ -846,17 +852,26 @@ header.scrolled {
   z-index: 1;
 }
 
+.book-a-table:hover {
+  background: linear-gradient(135deg, #c44d1f, #e5612f);
+  transform: translateY(-2px);
+}
+
 /* book-a-table button end */
 
 /* services cards start */
+.services {
+  background-color: #fffaf5;
+}
+
 .services .cards {
   position: relative;
-  background-color: var(--background-color);
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(145deg, #ffffff, #fff5ec);
+  box-shadow: 0 10px 30px rgba(229, 97, 47, 0.08);
   border-radius: 18px;
   overflow: hidden;
+  transition: all 0.3s ease;
+  border: none;
 }
 
 .services .cards .icon i,
@@ -878,7 +893,7 @@ header.scrolled {
   right: 0;
   width: 0;
   height: 100%;
-  background-color: var(--primary-color);
+  background: linear-gradient(145deg, #e5612f, #c44d1f);
   transition: width 0.3s ease, right 0.3s ease;
   z-index: 1;
 }
@@ -899,6 +914,10 @@ header.scrolled {
   padding-bottom: 8px;
 }
 
+.services .cards:hover {
+  box-shadow: 0 15px 40px rgba(229, 97, 47, 0.15);
+}
+
 /* services cards end */
 
 /* about us start */
@@ -908,6 +927,8 @@ header.scrolled {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: #1a1a2e;
+  background-blend-mode: overlay;
 }
 
 .about-us .about-content .section-title,
@@ -920,6 +941,11 @@ header.scrolled {
 
 .about-us .about-content {
   color: var(--text-color-white);
+}
+
+.about-us .about-content p,
+.about-us .about-content h2 {
+  color: #ffffff;
 }
 
 .about-extra h6 {
@@ -968,6 +994,10 @@ header.scrolled {
 }
 
 /* Our Menu Slider Start */
+.our-menu {
+  background-color: #fffaf5;
+}
+
 .our-menu .section-title h5 {
   position: relative;
 }
@@ -1130,7 +1160,8 @@ header.scrolled {
 .our-menu .item-wrapper .item-left h5,
 .lunch-time .item-wrapper .item-left h5,
 .chef-choise .item-wrapper .item-left h5 {
-  color: var(--text-color);
+  color: #2d2d2d;
+  font-weight: 700;
 }
 
 .chef-choise .item-wrapper .item-left h5 {
@@ -1142,6 +1173,7 @@ header.scrolled {
 .chef-choise .item-wrapper .item-left p {
   font-size: 14px;
   padding-top: 4px;
+  color: #6c6c6c;
 }
 
 .chef-choise .item-wrapper .item-left p {
@@ -1239,6 +1271,8 @@ header.scrolled {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: #0f0f1a;
+  background-blend-mode: overlay;
 }
 
 .testimonials .section-title h2 {
@@ -1285,6 +1319,7 @@ header.scrolled {
   font-size: 16px;
   padding: 0 20px;
   font-style: italic;
+  color: #e0e0e0;
 }
 
 .testimonials .testimonial-slider-wrapper .slider-content .testi-info .name {
@@ -1424,6 +1459,10 @@ header.scrolled {
 }
 
 /* our chef start */
+.our-chefs {
+  background-color: #fffaf5;
+}
+
 .our-chef-slider-wrapper .chef-slider-content i {
   color: var(--secondary-color);
 }
@@ -1537,11 +1576,17 @@ header.scrolled {
 }
 
 .reservation-content {
-  background-color: #090909;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
 }
 
 .reservation-content span {
   color: var(--primary-color);
+  font-weight: bold;
+}
+
+.reservation .reservation-content h2,
+.reservation .reservation-content p {
+  color: #ffffff;
 }
 
 .reservation-content .input i {
@@ -1603,6 +1648,10 @@ header.scrolled {
 }
 
 /* our services start */
+.our-services {
+  background: linear-gradient(135deg, #fffaf5, #fff5ec);
+}
+
 .icon-box {
   position: relative;
   height: 120px;
@@ -1614,6 +1663,7 @@ header.scrolled {
   margin-bottom: 20px;
   background-position: center;
   transition-duration: 0.5s;
+  background-color: #ffffff;
 }
 
 .icon-box > .number {
@@ -1635,7 +1685,8 @@ header.scrolled {
 }
 
 .icon-box:hover {
-  background-color: var(--primary-color);
+  background-color: #e5612f;
+  transform: translateY(-5px);
 }
 
 .icon-box:hover i {
@@ -1652,7 +1703,7 @@ header.scrolled {
 }
 
 .our-gallery {
-  background-color: #090909;
+  background-color: #0a0a0a;
 }
 
 .gallery-image {
@@ -1703,8 +1754,21 @@ header.scrolled {
 }
 
 /* start blog */
+.our-blog {
+  background: #ffffff;
+}
+
 .card {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .blog-info i,
@@ -1749,7 +1813,7 @@ header.scrolled {
   font-family: "Pacifico", cursive;
   font-size: 20px;
   font-weight: 300;
-  color: black;
+  color: #2d2d2d;
   text-decoration: none;
 }
 
@@ -1762,6 +1826,9 @@ header.scrolled {
 /* subscribe now start */
 .subscribe-us {
   position: relative;
+  background: linear-gradient(135deg, #fffaf5, #fff5ec);
+  border-radius: 30px;
+  margin: 20px;
 }
 
 .subscribe-us .content p {
@@ -1819,12 +1886,12 @@ header.scrolled {
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #e5612f, #c44d1f);
   text-decoration: none;
   font-size: 20px;
   border-radius: 50%;
   border: 2px solid white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 20px rgba(229, 97, 47, 0.4);
   z-index: 99;
 }
 
@@ -1846,10 +1913,11 @@ header.scrolled {
 footer {
   padding-top: 100px;
   padding-bottom: 40px;
-  background-color: #040609;
+  background-color: #0a0a0a;
   background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&fit=crop");
   background-size: cover;
   background-position: center;
+  background-blend-mode: overlay;
 }
 
 footer .social-icons a {
@@ -2714,194 +2782,4 @@ footer p {
 
 .author-name:hover {
   color: var(--primary-color);
-}
-
-/* ======================================== */
-/* إصلاح الألوان والخلفيات - إضافة ألوان قوية */
-/* ======================================== */
-
-/* تغيير الخلفية الرئيسية للصفحة */
-body {
-  background-color: #fef9f1;
-}
-
-/* إضافة لون خلفية للأقسام */
-.services,
-.our-menu,
-.our-blog,
-.our-services {
-  background-color: #fffaf5;
-}
-
-/* تحسين ألوان البطاقات */
-.cards {
-  background: linear-gradient(145deg, #ffffff, #fff5ec);
-  box-shadow: 0 10px 30px rgba(229, 97, 47, 0.08);
-  transition: all 0.3s ease;
-}
-
-.cards:hover {
-  background: linear-gradient(145deg, #fff5ec, #ffffff);
-  box-shadow: 0 15px 40px rgba(229, 97, 47, 0.15);
-}
-
-/* ألوان خلفية للأقسام المميزة */
-.about-us {
-  background-color: #1a1a2e;
-  background-blend-mode: overlay;
-}
-
-.testimonials {
-  background-color: #0f0f1a;
-  background-blend-mode: overlay;
-}
-
-.our-gallery {
-  background-color: #0a0a0a;
-}
-
-.our-chefs {
-  background-color: #fffaf5;
-}
-
-/* تحسين ألوان النصوص */
-.about-us .about-content p,
-.about-us .about-content h2 {
-  color: #ffffff;
-}
-
-.about-us .about-extra h6 {
-  color: #ffffff;
-}
-
-.testimonials .testimonial-slider-wrapper .slider-content .testi-content p {
-  color: #e0e0e0;
-}
-
-/* إضافة لون خلفية لقسم الحجز */
-.reservation-content {
-  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
-}
-
-/* تحسين ألوان الفوتر */
-footer {
-  background-color: #0a0a0a;
-  background-blend-mode: overlay;
-}
-
-/* إضافة خلفية للهيدر عند التمرير */
-header.scrolled {
-  background-color: #e5612f;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* تحسين ألوان الأزرار */
-.book-a-table {
-  background: linear-gradient(135deg, #e5612f, #c44d1f);
-  box-shadow: 0 5px 15px rgba(229, 97, 47, 0.3);
-}
-
-.book-a-table:hover {
-  background: linear-gradient(135deg, #c44d1f, #e5612f);
-  transform: translateY(-2px);
-}
-
-/* تحسين ألوان بطاقات الخدمات */
-.services .cards {
-  background: linear-gradient(145deg, #ffffff, #fdf4ea);
-  border: none;
-}
-
-.services .cards:hover {
-  background: linear-gradient(145deg, #e5612f, #c44d1f);
-}
-
-.services .cards:hover .icon i,
-.services .cards:hover .heading h5,
-.services .cards:hover .para p {
-  color: #ffffff;
-}
-
-/* ألوان قسم المنيو */
-.our-menu .item-wrapper .item-left h5 {
-  color: #2d2d2d;
-  font-weight: 700;
-}
-
-.our-menu .item-wrapper .item-left p {
-  color: #6c6c6c;
-}
-
-/* ألوان المدونة */
-.card {
-  background: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.blog-content .blog-title a {
-  color: #2d2d2d;
-}
-
-/* ألوان أيقونات الخدمات */
-.icon-box {
-  background-color: #ffffff;
-  transition: all 0.3s ease;
-}
-
-.icon-box:hover {
-  background-color: #e5612f;
-  transform: translateY(-5px);
-}
-
-/* ألوان زر العودة للأعلى */
-#back-to-top {
-  background: linear-gradient(135deg, #e5612f, #c44d1f);
-  box-shadow: 0 5px 20px rgba(229, 97, 47, 0.4);
-}
-
-/* ألوان السلة */
-.shopping-cart-header {
-  background: linear-gradient(135deg, #e5612f, #c44d1f);
-  color: white;
-}
-
-.shopping-cart-header h2 {
-  color: white;
-}
-
-.shopping-cart-header i {
-  color: white;
-}
-
-/* ألوان خلفية أقسام إضافية */
-.our-services {
-  background: linear-gradient(135deg, #fffaf5, #fff5ec);
-}
-
-.our-blog {
-  background: #ffffff;
-}
-
-.subscribe-us {
-  background: linear-gradient(135deg, #fffaf5, #fff5ec);
-  border-radius: 30px;
-  margin: 20px;
-}
-
-/* تحسين ظهور النصوص على الخلفيات الداكنة */
-.reservation .reservation-content h2,
-.reservation .reservation-content p {
-  color: #ffffff;
-}
-
-.reservation .reservation-content span {
-  color: #e5612f;
-  font-weight: bold;
 }
