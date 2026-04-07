@@ -2919,3 +2919,24 @@ footer p {
 .author-name:hover {
   color: var(--primary-color);
 }
+
+.loader {
+  transition: opacity 0.5s ease;
+}
+
+.reservation-bg {
+  position: relative;
+  min-height: 400px;
+  height: auto;
+  background: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=1000&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .about-us,
+  .testimonials,
+  .page-banner {
+    background-attachment: scroll;
+  }
+}
