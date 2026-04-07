@@ -1,12 +1,18 @@
 AOS.init({
-  offset: '140',
+  offset: 140,
+  once: true,
+  duration: 800,
 });
 
 document.addEventListener("DOMContentLoaded", function() {
   const loader = document.querySelector('.loader');
   setTimeout(() => {
     loader.style.opacity = '0';
-    loader.style.display = 'none';
+    loader.style.transition = 'opacity 0.5s ease';
+    loader.style.pointerEvents = 'none';
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 500);
   }, 3000);
 });
 
