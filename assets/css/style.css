@@ -227,6 +227,12 @@
 }
 
 /* Applying Fonts and Colors to Elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -769,6 +775,13 @@ header.scrolled {
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.banner .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .banner-content h1 {
@@ -794,7 +807,8 @@ header.scrolled {
 }
 
 .banner img {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   object-fit: contain;
   animation: imgRotate 50s linear infinite;
 }
@@ -862,6 +876,8 @@ header.scrolled {
 /* services cards start */
 .services {
   background-color: #fffaf5;
+  padding: 60px 0;
+  margin: 0;
 }
 
 .services .cards {
@@ -872,6 +888,7 @@ header.scrolled {
   overflow: hidden;
   transition: all 0.3s ease;
   border: none;
+  height: 100%;
 }
 
 .services .cards .icon i,
@@ -929,6 +946,8 @@ header.scrolled {
   background-size: cover;
   background-color: #1a1a2e;
   background-blend-mode: overlay;
+  padding: 80px 0;
+  margin: 0;
 }
 
 .about-us .about-content .section-title,
@@ -996,6 +1015,8 @@ header.scrolled {
 /* Our Menu Slider Start */
 .our-menu {
   background-color: #fffaf5;
+  padding: 60px 0;
+  margin: 0;
 }
 
 .our-menu .section-title h5 {
@@ -1273,6 +1294,8 @@ header.scrolled {
   background-size: cover;
   background-color: #0f0f1a;
   background-blend-mode: overlay;
+  padding: 80px 0;
+  margin: 0;
 }
 
 .testimonials .section-title h2 {
@@ -1461,6 +1484,8 @@ header.scrolled {
 /* our chef start */
 .our-chefs {
   background-color: #fffaf5;
+  padding: 60px 0;
+  margin: 0;
 }
 
 .our-chef-slider-wrapper .chef-slider-content i {
@@ -1545,6 +1570,8 @@ header.scrolled {
 /* start reservation */
 .reservation {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .reservation img {
@@ -1577,6 +1604,7 @@ header.scrolled {
 
 .reservation-content {
   background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  padding: 40px;
 }
 
 .reservation-content span {
@@ -1650,6 +1678,8 @@ header.scrolled {
 /* our services start */
 .our-services {
   background: linear-gradient(135deg, #fffaf5, #fff5ec);
+  padding: 60px 0;
+  margin: 0;
 }
 
 .icon-box {
@@ -1704,58 +1734,62 @@ header.scrolled {
 
 .our-gallery {
   background-color: #0a0a0a;
+  padding: 60px 0;
+  margin: 0;
 }
 
 .gallery-image {
   width: 100%;
-  height: 650px;
+  height: 450px;
   background-position: center;
   background-size: cover;
 }
 
 .gallery-image-one {
-  background-image: url("https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=650&fit=crop");
+  background-image: url("https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=450&fit=crop");
 }
 
 .gallery-image-two {
   width: 100%;
-  height: 325px;
+  height: 225px;
   background-position: center;
   background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=325&fit=crop");
+  background-image: url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=225&fit=crop");
 }
 
 .gallery-image-three {
   width: 100%;
-  height: 325px;
+  height: 225px;
   background-position: center;
   background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=325&fit=crop");
+  background-image: url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=225&fit=crop");
 }
 
 .gallery-image-four {
-  background-image: url("https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=650&fit=crop");
+  background-image: url("https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=450&fit=crop");
 }
 
 .gallery-image-five {
   width: 100%;
-  height: 325px;
+  height: 225px;
   background-position: center;
   background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?w=400&h=325&fit=crop");
+  background-image: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?w=400&h=225&fit=crop");
 }
 
 .gallery-image-six {
   width: 100%;
-  height: 325px;
+  height: 225px;
   background-position: center;
   background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=325&fit=crop");
+  background-image: url("https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=225&fit=crop");
 }
 
 /* start blog */
 .our-blog {
   background: #ffffff;
+  padding: 60px 0;
+  margin: 0;
 }
 
 .card {
@@ -1764,6 +1798,7 @@ header.scrolled {
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .card:hover {
@@ -1828,7 +1863,9 @@ header.scrolled {
   position: relative;
   background: linear-gradient(135deg, #fffaf5, #fff5ec);
   border-radius: 30px;
-  margin: 20px;
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 90%;
 }
 
 .subscribe-us .content p {
@@ -1867,8 +1904,8 @@ header.scrolled {
 
 .subscribe-us img {
   position: absolute;
-  width: 250px;
-  top: -50px;
+  width: 200px;
+  top: -40px;
 }
 
 [dir="rtl"] .subscribe-us img {
@@ -1911,13 +1948,14 @@ header.scrolled {
 
 /* start footer */
 footer {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 40px;
   background-color: #0a0a0a;
   background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&fit=crop");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+  margin: 0;
 }
 
 footer .social-icons a {
@@ -1985,6 +2023,94 @@ footer p {
   }
 }
 
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .banner .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .services, .about-us, .our-menu, .testimonials, .our-chefs, .our-services, .our-gallery, .our-blog {
+    padding: 40px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .display-2 {
+    font-size: 3rem;
+  }
+  
+  .display-5 {
+    font-size: 2rem;
+  }
+  
+  .display-6 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .services, .about-us, .our-menu, .testimonials, .our-chefs, .our-services, .our-gallery, .our-blog {
+    padding: 30px 0;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .display-2 {
+    font-size: 2rem;
+  }
+  
+  .gallery-image {
+    height: 300px;
+  }
+  
+  .gallery-image-two, .gallery-image-three, .gallery-image-five, .gallery-image-six {
+    height: 150px;
+  }
+  
+  .subscribe-us {
+    margin: 20px auto;
+    padding: 30px;
+  }
+  
+  .subscribe-us img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .services, .about-us, .our-menu, .testimonials, .our-chefs, .our-services, .our-gallery, .our-blog {
+    padding: 20px 0;
+  }
+  
+  .book-a-table {
+    width: 160px;
+  }
+  
+  .book-a-table a {
+    font-size: 0.875rem;
+    padding: 10px 16px;
+  }
+  
+  .reservation-content {
+    padding: 20px;
+  }
+}
+
 /* Contact Us Page Start */
 .page-banner {
   background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=500&fit=crop");
@@ -1994,7 +2120,7 @@ footer p {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .page-banner .banner-content::before {
